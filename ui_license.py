@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'licensedjSFru.ui'
+## Form generated from reading UI file 'licenseupvGGQ.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.3
 ##
@@ -56,14 +56,9 @@ class Ui_Form(object):
 "li.unchecked::marker { content: \"\\2610\"; }\n"
 "li.checked::marker { content: \"\\2612\"; }\n"
 "</style></head><body style=\" font-family:'Segoe UI Variable Text'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u0417\u0434\u0435\u0441\u044c \u0431\u0443\u0434\u0435\u0442 \u0438\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u043b\u0438\u0446\u0435\u043d\u0437\u0438\u0438</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10pt;\">\u044b\u0432</span><span style=\" font-size:14pt;"
-                        "\">\u044b\u0432\u044b\u0432</span><span style=\" font-size:14pt; font-weight:700;\">\u044b\u0432\u044b\u0432</span><span style=\" font-size:14pt; font-style:italic;\">\u044b\u0432\u044b\u0432</span><span style=\" font-size:14pt; text-decoration: underline;\">\u044b\u0432\u044b\u0432</span><span style=\" font-size:14pt; font-weight:700; font-style:italic; text-decoration: underline;\">\u044b\u0432\u044b\u0432</span></p>\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u044b\u0432\u044b\u0432</span></p>\n"
-"<p align=\"right\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u044b\u0432\u044b\u0432</span></p>\n"
-"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u044b"
-                        "\u0432\u044b\u0432\u044b\u0432</span></p>\n"
-"<p dir='rtl' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u0444\u044b</span></p>\n"
-"<p dir='rtl' style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; vertical-align:sub;\">\u0444\u044b</span><span style=\" font-size:14pt; vertical-align:super;\">\u0444\u044b</span><span style=\" font-size:14pt;\">\u0444\u044b</span></p></body></html>", None))
+"<p align=\"justify\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0435 \u0443\u0447\u0435\u0431\u043d\u043e\u0433\u043e \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u0430 </span><span style=\" font-size:14pt; font-we"
+                        "ight:700;\">\u00ab\u041e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u044b\u0445 \u0441\u0435\u0442\u0435\u0439\u00bb</span><span style=\" font-size:14pt;\">.</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">\u0418\u0441\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c: </span><span style=\" font-size:14pt; font-weight:700;\">\u0422\u0443\u0440\u0447\u0430\u043d\u043e\u0432 \u0420\u043e\u0434\u0438\u043e\u043d</span><span style=\" font-size:14pt;\">.</span></p></body></html>", None))
     # retranslateUi
 
