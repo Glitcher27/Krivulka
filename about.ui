@@ -126,7 +126,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Версия - v0.1</string>
+    <string>Версия - v0.2</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignmentFlag::AlignBottom|Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing</set>

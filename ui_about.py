@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'aboutRsukSh.ui'
+## Form generated from reading UI file 'aboutsrkceg.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.3
 ##
@@ -71,6 +71,6 @@ class Ui_Form(object):
         self.label_3.setText(QCoreApplication.translate("Form", u"\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043e \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u043e\u043c \u0425\u0418\u0418\u041a \u0421\u0438\u0431\u0413\u0423\u0422\u0418 \u0433\u0440\u0443\u043f\u043f\u044b \u0418\u0421\u041f-330 \u0422\u0443\u0440\u0447\u0430\u043d\u043e\u0432\u044b\u043c \u0420\u043e\u0434\u0438\u043e\u043d\u043e\u043c", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"\u041d\u0435 \u0434\u043b\u044f \u0430\u0434\u0435\u043a\u0432\u0430\u0442\u043d\u043e\u0433\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f", None))
         self.label_5.setText(QCoreApplication.translate("Form", u"2023 \u0433. ", None))
-        self.label_6.setText(QCoreApplication.translate("Form", u"\u0412\u0435\u0440\u0441\u0438\u044f - v0.1", None))
+        self.label_6.setText(QCoreApplication.translate("Form", u"\u0412\u0435\u0440\u0441\u0438\u044f - v0.2", None))
     # retranslateUi
 
