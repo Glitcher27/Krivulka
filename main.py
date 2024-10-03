@@ -451,24 +451,6 @@ class MainWindow(QMainWindow):
 
         # Обновляем график после сброса
         self.plot()
-
-    def setup_menu_info(self):
-        """Настройка меню info для открытия соответствующих окон"""
-        self.ui.about.triggered.connect(self.show_about)
-        self.ui.license.triggered.connect(self.show_license)
-        self.ui.howto.triggered.connect(self.show_howto)
-
-#    def show_about(self):
-#        about_dialog = AboutDialog(self)
-#        about_dialog.exec_()  # Открываем модально
-#
-#    def show_license(self):
-#        license_dialog = LicenseDialog(self)
-#        license_dialog.exec_()  # Открываем модально
-#
-#    def show_howto(self):
-#        howto_dialog = HowToDialog(self)
-#        howto_dialog.exec_()  # Открываем модально
 #
     def show_about_window(self):
         """Открытие окна 'About'."""
