@@ -1,9 +1,10 @@
 import sys
 import os
+import webbrowser
 from pathlib import Path
 import numpy as np
-from PySide6.QtGui import QAction, QPixmap
-from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QFileDialog, QDialog, QDialogButtonBox
+from PySide6.QtGui import QAction
+from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QFileDialog, QDialog
 from PySide6.QtCore import QSize, Qt
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
@@ -56,6 +57,11 @@ def get_user_data_directory():
     # Создаем директорию, если её нет
     app_data_dir.mkdir(parents=True, exist_ok=True)
     return app_data_dir
+
+
+def open_link(url):
+    """Открывает URL в стандартном браузере."""
+    webbrowser.open(url)
 
 
 class MainWindow(QMainWindow):
@@ -127,6 +133,14 @@ class MainWindow(QMainWindow):
         self.ui.about.triggered.connect(self.show_about_window)
         self.ui.license.triggered.connect(self.show_license_window)
         self.ui.howto.triggered.connect(self.show_howto_window)
+        self.ui.code_ac.triggered.connect(
+            lambda: open_link("https://vscode.dev/github/Glitcher27/Krivulka/tree/main"))
+        self.ui.docs_ac.triggered.connect(lambda: open_link(
+            "https://drive.google.com/drive/folders/1F_MRmd6vd5kIVZKyIdS79BbGzvWUZYXR?usp=drive_link"))
+        self.ui.task_ac.triggered.connect(lambda: open_link(
+            "https://drive.google.com/file/d/1jfTQeKqeA1C7K6RPgrCDl3QEKDVrLNMs/view?usp=drive_link"))
+        self.ui.installers.triggered.connect(lambda: open_link(
+            "https://drive.google.com/drive/folders/1kE8CgloEljCqDfiAxbuM4V8JvdTmWGCc?usp=drive_link"))
 
     def update_a(self):
         """Обновление переменной a при потере фокуса поля input_a"""

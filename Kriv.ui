@@ -37,7 +37,7 @@
           </size>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <widget class="QWidget" name="solo">
           <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -315,11 +315,6 @@
                   </item>
                   <item>
                    <property name="text">
-                    <string>Ораньжевый</string>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
                     <string>Голубой</string>
                    </property>
                   </item>
@@ -551,6 +546,11 @@
     <addaction name="howto"/>
     <addaction name="license"/>
     <addaction name="about"/>
+    <addaction name="separator"/>
+    <addaction name="docs_ac"/>
+    <addaction name="code_ac"/>
+    <addaction name="installers"/>
+    <addaction name="task_ac"/>
    </widget>
    <addaction name="file"/>
    <addaction name="info"/>
@@ -613,6 +613,26 @@
   <action name="installators">
    <property name="text">
     <string>Инсталляторы</string>
+   </property>
+  </action>
+  <action name="docs_ac">
+   <property name="text">
+    <string>Документы</string>
+   </property>
+  </action>
+  <action name="code_ac">
+   <property name="text">
+    <string>Код</string>
+   </property>
+  </action>
+  <action name="installers">
+   <property name="text">
+    <string>Установщики</string>
+   </property>
+  </action>
+  <action name="task_ac">
+   <property name="text">
+    <string>Задание</string>
    </property>
   </action>
  </widget>

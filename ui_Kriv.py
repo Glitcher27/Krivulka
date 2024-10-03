@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'KrivuQvwhK.ui'
+## Form generated from reading UI file 'KrivQoWggd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.3
 ##
@@ -54,6 +54,14 @@ class Ui_MainWindow(object):
         self.task.setObjectName(u"task")
         self.installators = QAction(MainWindow)
         self.installators.setObjectName(u"installators")
+        self.docs_ac = QAction(MainWindow)
+        self.docs_ac.setObjectName(u"docs_ac")
+        self.code_ac = QAction(MainWindow)
+        self.code_ac.setObjectName(u"code_ac")
+        self.installers = QAction(MainWindow)
+        self.installers.setObjectName(u"installers")
+        self.task_ac = QAction(MainWindow)
+        self.task_ac.setObjectName(u"task_ac")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.horizontalLayout = QHBoxLayout(self.centralwidget)
@@ -232,7 +240,6 @@ class Ui_MainWindow(object):
         self.color.addItem("")
         self.color.addItem("")
         self.color.addItem("")
-        self.color.addItem("")
         self.color.setObjectName(u"color")
 
         self.horizontalLayout_7.addWidget(self.color)
@@ -348,10 +355,15 @@ class Ui_MainWindow(object):
         self.info.addAction(self.howto)
         self.info.addAction(self.license)
         self.info.addAction(self.about)
+        self.info.addSeparator()
+        self.info.addAction(self.docs_ac)
+        self.info.addAction(self.code_ac)
+        self.info.addAction(self.installers)
+        self.info.addAction(self.task_ac)
 
         self.retranslateUi(MainWindow)
 
-        self.pager.setCurrentIndex(1)
+        self.pager.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -371,6 +383,10 @@ class Ui_MainWindow(object):
         self.docs.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b", None))
         self.task.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435", None))
         self.installators.setText(QCoreApplication.translate("MainWindow", u"\u0418\u043d\u0441\u0442\u0430\u043b\u043b\u044f\u0442\u043e\u0440\u044b", None))
+        self.docs_ac.setText(QCoreApplication.translate("MainWindow", u"\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b", None))
+        self.code_ac.setText(QCoreApplication.translate("MainWindow", u"\u041a\u043e\u0434", None))
+        self.installers.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0449\u0438\u043a\u0438", None))
+        self.task_ac.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0434\u0430\u043d\u0438\u0435", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0443\u043d\u043a\u0446\u0438\u044f \u0433\u0440\u0430\u0444\u0438\u043a\u0430:", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"\u0192(\u2179)=ax\u00b2+b", None))
         self.draw.setText(QCoreApplication.translate("MainWindow", u"\u0427\u0435\u0440\u0442\u0438\u0442\u044c", None))
@@ -382,12 +398,11 @@ class Ui_MainWindow(object):
         self.color.setItemText(1, QCoreApplication.translate("MainWindow", u"\u041a\u0440\u0430\u0441\u043d\u044b\u0439", None))
         self.color.setItemText(2, QCoreApplication.translate("MainWindow", u"\u0421\u0438\u043d\u0438\u0439", None))
         self.color.setItemText(3, QCoreApplication.translate("MainWindow", u"\u0416\u0435\u043b\u0442\u044b\u0439", None))
-        self.color.setItemText(4, QCoreApplication.translate("MainWindow", u"\u041e\u0440\u0430\u043d\u044c\u0436\u0435\u0432\u044b\u0439", None))
-        self.color.setItemText(5, QCoreApplication.translate("MainWindow", u"\u0413\u043e\u043b\u0443\u0431\u043e\u0439", None))
-        self.color.setItemText(6, QCoreApplication.translate("MainWindow", u"\u0421\u0435\u0440\u044b\u0439", None))
-        self.color.setItemText(7, QCoreApplication.translate("MainWindow", u"\u0411\u0435\u043b\u044b\u0439", None))
-        self.color.setItemText(8, QCoreApplication.translate("MainWindow", u"\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439", None))
-        self.color.setItemText(9, QCoreApplication.translate("MainWindow", u"\u0414\u0440\u0443\u0433\u043e\u0439", None))
+        self.color.setItemText(4, QCoreApplication.translate("MainWindow", u"\u0413\u043e\u043b\u0443\u0431\u043e\u0439", None))
+        self.color.setItemText(5, QCoreApplication.translate("MainWindow", u"\u0421\u0435\u0440\u044b\u0439", None))
+        self.color.setItemText(6, QCoreApplication.translate("MainWindow", u"\u0411\u0435\u043b\u044b\u0439", None))
+        self.color.setItemText(7, QCoreApplication.translate("MainWindow", u"\u0424\u0438\u043e\u043b\u0435\u0442\u043e\u0432\u044b\u0439", None))
+        self.color.setItemText(8, QCoreApplication.translate("MainWindow", u"\u0414\u0440\u0443\u0433\u043e\u0439", None))
 
         self.hashtag.setText(QCoreApplication.translate("MainWindow", u"#", None))
         self.hex.setInputMask(QCoreApplication.translate("MainWindow", u"HHHHHH;-", None))
