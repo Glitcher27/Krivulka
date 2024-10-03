@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'KrivryALXa.ui'
+## Form generated from reading UI file 'KrivuQvwhK.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.3
 ##
@@ -27,6 +27,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(576, 602)
+        icon = QIcon()
+        icon.addFile(u"res/app.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        MainWindow.setWindowIcon(icon)
         self.save = QAction(MainWindow)
         self.save.setObjectName(u"save")
         self.forget = QAction(MainWindow)
@@ -345,22 +348,17 @@ class Ui_MainWindow(object):
         self.info.addAction(self.howto)
         self.info.addAction(self.license)
         self.info.addAction(self.about)
-        self.info.addSeparator()
-        self.info.addAction(self.code)
-        self.info.addAction(self.docs)
-        self.info.addAction(self.task)
-        self.info.addAction(self.installators)
 
         self.retranslateUi(MainWindow)
 
-        self.pager.setCurrentIndex(0)
+        self.pager.setCurrentIndex(1)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"\u041a\u0440\u0438\u0432\u0443\u043b\u044c\u043a\u0430", None))
         self.save.setText(QCoreApplication.translate("MainWindow", u"\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0433\u0440\u0430\u0444\u0438\u043a", None))
         self.forget.setText(QCoreApplication.translate("MainWindow", u"\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u0433\u0440\u0430\u0444\u0438\u043a", None))
         self.clear.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u044c \u0438\u0441\u0442\u043e\u0440\u0438\u044e", None))

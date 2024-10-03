@@ -2,12 +2,15 @@ import sys
 import os
 from pathlib import Path
 import numpy as np
-from PySide6.QtGui import QAction
-from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QFileDialog
-from PySide6.QtCore import QSize
+from PySide6.QtGui import QAction, QPixmap
+from PySide6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QLabel, QFileDialog, QDialog, QDialogButtonBox
+from PySide6.QtCore import QSize, Qt
 from matplotlib.backends.backend_qtagg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 from ui_Kriv import Ui_MainWindow  # Подключаем ваш сгенерированный файл с интерфейсом
+from ui_about import Ui_Form as Ui_AboutForm
+from ui_license import Ui_Form as Ui_LicenseForm
+from ui_howto import Ui_Form as Ui_HowtoForm
 
 
 class MplCanvas(FigureCanvas):
@@ -15,6 +18,31 @@ class MplCanvas(FigureCanvas):
         fig = Figure(figsize=(width, height), dpi=dpi)
         self.axes = fig.add_subplot(111)
         super().__init__(fig)
+
+class AboutDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.ui = Ui_AboutForm()
+        self.ui.setupUi(self)
+        self.setWindowModality(Qt.ApplicationModal)  # Блокируем основное окно
+
+# Класс для модального окна License
+class LicenseDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.ui = Ui_LicenseForm()
+        self.ui.setupUi(self)
+        self.setWindowModality(Qt.ApplicationModal)  # Блокируем основное окно
+
+# Класс для модального окна HowTo с функционалом кнопки "OK"
+class HowToDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.ui = Ui_HowtoForm()
+        self.ui.setupUi(self)
+        self.setWindowModality(Qt.ApplicationModal)  # Блокируем основное окно
+        self.ui.ok.clicked.connect(self.close)  # Кнопка "OK" закрывает окно
+
 
 
 def get_user_data_directory():
@@ -94,6 +122,11 @@ class MainWindow(QMainWindow):
         self.ui.exit.triggered.connect(self.close)
         self.ui.save.triggered.connect(self.save_graph)
         self.ui.forget.triggered.connect(self.forget_fields)
+
+        # Привязка сигналов к QAction в меню info
+        self.ui.about.triggered.connect(self.show_about_window)
+        self.ui.license.triggered.connect(self.show_license_window)
+        self.ui.howto.triggered.connect(self.show_howto_window)
 
     def update_a(self):
         """Обновление переменной a при потере фокуса поля input_a"""
@@ -418,6 +451,44 @@ class MainWindow(QMainWindow):
 
         # Обновляем график после сброса
         self.plot()
+
+    def setup_menu_info(self):
+        """Настройка меню info для открытия соответствующих окон"""
+        self.ui.about.triggered.connect(self.show_about)
+        self.ui.license.triggered.connect(self.show_license)
+        self.ui.howto.triggered.connect(self.show_howto)
+
+#    def show_about(self):
+#        about_dialog = AboutDialog(self)
+#        about_dialog.exec_()  # Открываем модально
+#
+#    def show_license(self):
+#        license_dialog = LicenseDialog(self)
+#        license_dialog.exec_()  # Открываем модально
+#
+#    def show_howto(self):
+#        howto_dialog = HowToDialog(self)
+#        howto_dialog.exec_()  # Открываем модально
+#
+    def show_about_window(self):
+        """Открытие окна 'About'."""
+        about_window = AboutDialog(self)
+        about_window.setWindowModality(Qt.ApplicationModal)
+        about_window.show()
+
+    def show_license_window(self):
+        """Открытие окна 'License'."""
+        license_window = LicenseDialog(self)
+        license_window.setWindowModality(Qt.ApplicationModal)
+        license_window.show()
+
+    def show_howto_window(self):
+        """Открытие окна 'Howto'."""
+        howto_window = HowToDialog(self)
+        howto_window.setWindowModality(Qt.ApplicationModal)
+        howto_window.ui.ok.clicked.connect(howto_window.close)
+        howto_window.show()
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

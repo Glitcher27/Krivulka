@@ -11,7 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Кривулька</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>res/app.ico</normaloff>res/app.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -33,7 +37,7 @@
           </size>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <widget class="QWidget" name="solo">
           <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -547,11 +551,6 @@
     <addaction name="howto"/>
     <addaction name="license"/>
     <addaction name="about"/>
-    <addaction name="separator"/>
-    <addaction name="code"/>
-    <addaction name="docs"/>
-    <addaction name="task"/>
-    <addaction name="installators"/>
    </widget>
    <addaction name="file"/>
    <addaction name="info"/>
