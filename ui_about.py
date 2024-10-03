@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'aboutvsYGmn.ui'
+## Form generated from reading UI file 'aboutRsukSh.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.3
 ##
@@ -51,6 +51,13 @@ class Ui_Form(object):
         self.label_5 = QLabel(Form)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setGeometry(QRect(240, 130, 151, 41))
+        self.label_6 = QLabel(Form)
+        self.label_6.setObjectName(u"label_6")
+        self.label_6.setGeometry(QRect(390, 160, 151, 111))
+        font2 = QFont()
+        font2.setPointSize(10)
+        self.label_6.setFont(font2)
+        self.label_6.setAlignment(Qt.AlignmentFlag.AlignBottom|Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing)
 
         self.retranslateUi(Form)
 
@@ -64,5 +71,6 @@ class Ui_Form(object):
         self.label_3.setText(QCoreApplication.translate("Form", u"\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0430\u043d\u043e \u0441\u0442\u0443\u0434\u0435\u043d\u0442\u043e\u043c \u0425\u0418\u0418\u041a \u0421\u0438\u0431\u0413\u0423\u0422\u0418 \u0433\u0440\u0443\u043f\u043f\u044b \u0418\u0421\u041f-330 \u0422\u0443\u0440\u0447\u0430\u043d\u043e\u0432\u044b\u043c \u0420\u043e\u0434\u0438\u043e\u043d\u043e\u043c", None))
         self.label_4.setText(QCoreApplication.translate("Form", u"\u041d\u0435 \u0434\u043b\u044f \u0430\u0434\u0435\u043a\u0432\u0430\u0442\u043d\u043e\u0433\u043e \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f", None))
         self.label_5.setText(QCoreApplication.translate("Form", u"2023 \u0433. ", None))
+        self.label_6.setText(QCoreApplication.translate("Form", u"\u0412\u0435\u0440\u0441\u0438\u044f - v0.1", None))
     # retranslateUi
 
